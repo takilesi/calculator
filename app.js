@@ -1,10 +1,12 @@
-// logic: when a number gets clicked on a temporary number
-
+// this calculator currently cannot handle order of operations
+// calculations execute in a linear fashion 
+// e.g. 40+30/2 returns 35 not 55
 
 let opsNums = []; 
 total = 0
 tempNum = ""
 
+// every consecutive click on a number or decimal concatenates to tempNum
 let nums = document.querySelectorAll(".buttonNumbers");
 for (i of nums) {
     i.addEventListener('click', function() {
@@ -14,6 +16,11 @@ for (i of nums) {
     });
 }
 
+// clicking an operator...
+// 1. set total to tempNum
+// 2. push total to array
+// 3. push operator to array
+// 4. set tempNum to 0
 let ops = document.querySelectorAll(".fourOperations");
 for (i of ops) {
     i.addEventListener('click', function() {
@@ -32,6 +39,7 @@ const ac = () => {
     tempNum = 0; 
 }
 
+
 const calculate = () => {
 
     total = parseFloat(tempNum)
@@ -39,6 +47,7 @@ const calculate = () => {
 
     total = parseFloat(opsNums[0])
     for (i=0; i <  opsNums.length-1; i++) {
+    
         if (opsNums[i] == "/" || 
             opsNums[i] == "+" ||
             opsNums[i] == "-" ||
