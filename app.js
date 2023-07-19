@@ -1,3 +1,6 @@
+// logic: when a number gets clicked on a temporary number
+
+
 let opsNums = []; 
 total = 0
 tempNum = ""
@@ -15,7 +18,7 @@ let ops = document.querySelectorAll(".fourOperations");
 for (i of ops) {
     i.addEventListener('click', function() {
         document.querySelector(".screen").innerHTML+=this.innerHTML; 
-        total = parseInt(tempNum)
+        total = parseFloat(tempNum)
         opsNums.push(total);
         opsNums.push(this.innerHTML);
         tempNum = 0; 
@@ -31,26 +34,26 @@ const ac = () => {
 
 const calculate = () => {
 
-    total = parseInt(tempNum)
+    total = parseFloat(tempNum)
     opsNums.push(total);
 
-    total = parseInt(opsNums[0])
+    total = parseFloat(opsNums[0])
     for (i=0; i <  opsNums.length-1; i++) {
         if (opsNums[i] == "/" || 
             opsNums[i] == "+" ||
             opsNums[i] == "-" ||
             opsNums[i] == "*"  ) {
                 if(opsNums[i] == "/"){
-                    total = total / parseInt(opsNums[i+1])
+                    total = total / parseFloat(opsNums[i+1])
                 }
                 else if(opsNums[i] == "+"){
-                    total = total + parseInt(opsNums[i+1])
+                    total = total + parseFloat(opsNums[i+1])
                 }
                 else if(opsNums[i] == "-"){
-                    total = total - parseInt(opsNums[i+1])
+                    total = total - parseFloat(opsNums[i+1])
                 }
                 else if(opsNums[i] == "*"){
-                    total = total * parseInt(opsNums[i+1])
+                    total = total * parseFloat(opsNums[i+1])
                 }
             }
     }
