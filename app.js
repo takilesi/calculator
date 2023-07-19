@@ -1,7 +1,7 @@
 let operatorsAndNumbers = []; 
 total = 0
 
-let nums = document.querySelectorAll(".buttons");
+let nums = document.querySelectorAll(".buttonNumbers");
 for (i of nums) {
     i.addEventListener('click', function() {
         document.querySelector(".screen").innerHTML+=this.innerHTML; 
@@ -47,5 +47,3 @@ const calculate = () => {
     }
     document.querySelector(".screen").innerHTML = total
 }
-
-

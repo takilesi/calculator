@@ -9,35 +9,34 @@
 </head>
 <body>
     <div class="outerCalcBox">
-        <!-- all keys in this class calculator -->
-        <div class="calculator">  
+        <div class="calcBox">
             <div class="row">
-                <div class="screen">0</div>
-                <button class="fourOperations" onclick ="ac()">AC</button>
+                <div class="screen">20</div>
+                <button class="buttons" onclick="ac()">AC</button>
             </div>
             <div class="row">
-                <button class="buttons" id="b7">7</button>
-                <button class="buttons" id="b8">8</button>
-                <button class="buttons" id="b9">9</button>
-                <button class="fourOperations" data-action="divide">/</button>
+                <button class="buttonNumbers" id="b7">7</button>
+                <button class="buttonNumbers" id="b8">8</button>
+                <button class="buttonNumbers" id="b9">9</button>
+                <button class="fourOperations">/</button>
             </div>
             <div class="row">
-                <button class="buttons" id="b4">4</button>
-                <button class="buttons" id="b5">5</button>
-                <button class="buttons" id="b6">6</button>
-                <button class="fourOperations" data-action="multiply">*</button>
+                <button class="buttonNumbers" id="b4">4</button>
+                <button class="buttonNumbers" id="b5">5</button>
+                <button class="buttonNumbers" id="b6">6</button>
+                <button class="fourOperations">*</button>
             </div>
             <div class="row">
-                <button class="buttons" id="b1">1</button>
-                <button class="buttons" id="b2">2</button>
-                <button class="buttons" id="b3">3</button>
-                <button class="fourOperations" data-action="subtract">-</button>
+                <button class="buttonNumbers" id="b1">1</button>
+                <button class="buttonNumbers" id="b2">2</button>
+                <button class="buttonNumbers" id="b3">3</button>
+                <button class="fourOperations">-</button>
             </div>
             <div class="row">
-                <button class="buttons" id="b0">0</button>
-                <button class="fourOperations" data-action="decimal">.</button>
-                <button class="fourOperations" data-action="calculate" onclick="calculate()">=</button>
-                <button class="fourOperations" data-action="add">+</button>
+                <button class="buttonNumbers" id="b0">0</button>
+                <button class="buttons">.</button>
+                <button class="buttons" onclick="calculate()">=</button>
+                <button class="fourOperations">+</button>
             </div>
         </div>
     </div>
