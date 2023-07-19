@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="outerCalcBox">
+        <!-- all keys in this class calculator -->
+        <div class="calculator">  
+            <div class="row">
+                <div class="screen">0</div>
+                <button class="fourOperations" onclick ="ac()">AC</button>
+            </div>
+            <div class="row">
+                <button class="buttons" id="b7">7</button>
+                <button class="buttons" id="b8">8</button>
+                <button class="buttons" id="b9">9</button>
+                <button class="fourOperations" data-action="divide">/</button>
+            </div>
+            <div class="row">
+                <button class="buttons" id="b4">4</button>
+                <button class="buttons" id="b5">5</button>
+                <button class="buttons" id="b6">6</button>
+                <button class="fourOperations" data-action="multiply">*</button>
+            </div>
+            <div class="row">
+                <button class="buttons" id="b1">1</button>
+                <button class="buttons" id="b2">2</button>
+                <button class="buttons" id="b3">3</button>
+                <button class="fourOperations" data-action="subtract">-</button>
+            </div>
+            <div class="row">
+                <button class="buttons" id="b0">0</button>
+                <button class="fourOperations" data-action="decimal">.</button>
+                <button class="fourOperations" data-action="calculate" onclick="calculate()">=</button>
+                <button class="fourOperations" data-action="add">+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

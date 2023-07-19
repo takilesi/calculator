@@ -1,0 +1,43 @@
+body{
+    display: flex; 
+    justify-content: center;
+}
+.outerCalcBox{
+    border: solid black;
+    display: flex; 
+    justify-items: center;
+    height: 245px; 
+    margin-top:  20vh;
+    border-radius: 20px;
+    padding: 10px; 
+    background: linear-gradient(black, blue);
+}
+.row{
+    /* border: solid blue;  */
+    height: 50px; 
+    width: 400px; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 40px;
+}
+.buttons,.buttonNumbers,.fourOperations{
+    border: solid lightblue;
+    width: 80px;
+    height: 38px; 
+    text-align: center;
+    border-radius: 10px;
+}
+.buttons:hover,.buttonNumbers:hover,.fourOperations:hover{
+    background-color: pink;
+}
+.screen{
+    border: solid lightblue;
+    width: 265px; 
+    padding-left: 10px;
+    border-radius: 10px;
+    height: 38px; 
+    background-color: rgb(241, 238, 238);
+    margin-top: -5px;
+}
