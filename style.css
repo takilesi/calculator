@@ -41,3 +41,11 @@ body{
     background-color: rgb(241, 238, 238);
     margin-top: -5px;
 }
+.footer{
+    font-size: 15px;
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    text-align: center;
+    width: 100%; 
+}

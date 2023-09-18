@@ -1,6 +1,7 @@
 // this calculator currently cannot handle order of operations
 // calculations execute in a linear fashion 
 // e.g. 40+30/2 returns 35 not 55
+// use Go Live in bottom corner of VSCode to run 
 
 let opsNums = []; 
 total = 0
