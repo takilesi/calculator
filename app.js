@@ -3,6 +3,9 @@
 // e.g. 40+30/2 returns 35 not 55
 // use Go Live in bottom corner of VSCode to run 
 
+// settings for render.com instructions 
+// https://community.render.com/t/how-to-host-a-simple-index-html-file-as-a-static-site/5734
+
 let opsNums = []; 
 total = 0
 tempNum = ""

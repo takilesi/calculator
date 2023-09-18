@@ -28,6 +28,8 @@ body{
     height: 38px; 
     text-align: center;
     border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .buttons:hover,.buttonNumbers:hover,.fourOperations:hover{
     background-color: pink;
