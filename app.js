@@ -6,6 +6,8 @@
 // settings for render.com instructions 
 // https://community.render.com/t/how-to-host-a-simple-index-html-file-as-a-static-site/5734
 
+// git: origin master 
+
 let opsNums = []; 
 total = 0
 tempNum = ""
